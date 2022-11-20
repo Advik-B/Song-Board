@@ -1,9 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 * {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #37393e;
+}
+
+.navbar {
+  @apply flex justify-between items-center w-full h-16 px-4 bg-gray-800 text-white;
 }
 
 /*# sourceMappingURL=input.css.map */
