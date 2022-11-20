@@ -13,4 +13,22 @@
   @apply flex justify-between items-center w-full h-16 px-4 bg-gray-800 text-white;
 }
 
+.navbar__logo {
+  @apply text-2xl font-bold;
+}
+
+.navbar__menu {
+  @apply flex items-center;
+}
+
+.navitem {
+  @apply text-lg font-medium mr-4;
+}
+
+.logo {
+  @apply text-2xl font-bold;
+  scale: 0.5;
+  background-color: #06c8f5;
+}
+
 /*# sourceMappingURL=input.css.map */
