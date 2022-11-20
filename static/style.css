@@ -590,4 +590,30 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.navbar__logo {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+}
+
+.navitem {
+  margin-right: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+.logo {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  scale: 0.5;
+  background-color: #06c8f5;
+}
+
 /*# sourceMappingURL=style.css.map */
