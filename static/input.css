@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  @apply bg-slate-800;
+}
+
 .no_javascript {
   display: flex;
   flex-direction: column;
@@ -40,19 +44,41 @@
 }
 
 .nav-bar {
-  @apply items-center bg-gray-900 p-4 justify-between top-0 w-full fixed z-10;
+  @apply items-center bg-gray-900 p-4 justify-between top-0 w-full fixed;
   z-index: 100;
 }
 
-.nav-button {
-  @apply flex flex-row items-center bg-green-500 text-white p-2 rounded;
+.nav-bar a {
+  @apply text-white text-lg font-bold;
 }
 
-.search-box {
-  @apply flex flex-row items-center bg-gray-900 text-aqua p-2 rounded-l;
-  color: #37393e;
-  border: 3px solid #4fe851;
-  border-radius: 5px;
+.nav-bar a:hover {
+  @apply text-gray-300;
+}
+
+.nav-search-box {
+  @apply bg-gray-800 rounded-2xl p-2 flex items-center accent-sky-500 text-white;
+  border: 1px solid #37393e;
+}
+.nav-search-box::placeholder {
+  @apply shadow-none opacity-75;
+}
+
+.nav-search-button {
+  @apply bg-cyan-600 text-white rounded-2xl p-2;
+}
+
+.song-list {
+  @apply flex flex-col items-center justify-center w-full;
+  border: 1px solid #37393e;
+}
+.song-list::placeholder {
+  @apply shadow-none opacity-75;
+}
+
+.title {
+  @apply text-3xl font-bold text-white;
+  z-index: 150;
 }
 
 /*# sourceMappingURL=input.css.map */
