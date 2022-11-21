@@ -555,65 +555,80 @@ video {
   display: block;
 }
 
-.flex {
-  display: flex;
-}
-
 .hidden {
   display: none;
 }
 
-.underline {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
-
-* {
+.no_javascript {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100vh;
+  width: 100vw;
+  color: #13beea;
   background-color: #37393e;
+  font-family: "Arial", Gadget, sans-serif;
 }
 
-.navbar {
+.no_javascript h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: red;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.no_javascript p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.no_javascript a {
+  color: #00ff89;
+  text-decoration: none;
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+}
+
+.no_javascript a:hover {
+  color: #00ff89;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+.nav-bar {
   display: flex;
-  height: 4rem;
-  width: 100%;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-  padding-left: 1rem;
-  padding-right: 1rem;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  padding: 1rem;
+  z-index: 100;
+}
+
+.nav-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+  padding: 0.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.navbar__logo {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 700;
-}
-
-.navbar__menu {
+.search-box {
   display: flex;
+  flex-direction: row;
   align-items: center;
-}
-
-.navitem {
-  margin-right: 1rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 500;
-}
-
-.logo {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 700;
-  scale: 0.5;
-  background-color: #06c8f5;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  color: #37393e;
 }
 
 /*# sourceMappingURL=style.css.map */

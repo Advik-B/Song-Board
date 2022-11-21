@@ -2,32 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #37393e;
+.no_javascript {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        color: #13beea;
+        background-color: #37393e;
+        font-family: 'Arial', Gadget, sans-serif;
+
+    }
+
+    .no_javascript h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: red;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .no_javascript p {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    .no_javascript a
+    {
+        color: #00ff89;
+        text-decoration: none;
+        font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+    }
+
+    .no_javascript a:hover {
+      color: #00ff89;
+      text-decoration: underline;
+      font-size: 1.5rem;
+    }
+
+.nav-bar {
+  @apply items-center bg-gray-900 p-4 justify-between top-0 w-full fixed z-10;
+  z-index: 100;
 }
 
-.navbar {
-    @apply flex justify-between items-center w-full h-16 px-4 bg-gray-800 text-white;
+.nav-button {
+  @apply flex flex-row items-center bg-green-500 text-white p-2 rounded;
 }
 
-.navbar__logo {
-    @apply text-2xl font-bold;
-}
+.search-box {
+  @apply flex flex-row items-center bg-gray-900 text-aqua p-2 rounded-l;
+  color : #37393e;
+  border: 3px solid #4fe851;
+  border-radius: 5px;
 
-.navbar__menu {
-    @apply flex items-center;
-}
-
-.navitem {
-    @apply text-lg font-medium mr-4;
-}
-
-.logo {
-    @apply text-2xl font-bold;
-  scale: .5;
-  background-color: #06c8f5;
 }
