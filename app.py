@@ -8,8 +8,8 @@ api = Api(app)
 
 @app.route('/')
 def hello_world(**args):
-    return render_template("index.html", name=f"{randint(1, 100)}", **args)
+    return render_template("index.html", **args)
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
